@@ -1,128 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Escajeda | Power Systems & Microgrids</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #0f172a;
-            color: #e2e8f0;
-        }
-        header {
-            background: #020617;
-            padding: 2rem;
-            text-align: center;
-        }
-        h1 { margin: 0; }
-        h2 { color: #38bdf8; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luis Escajeda | Power Systems & Microgrids</title>
 
-        section {
-            padding: 2rem;
-            max-width: 900px;
-            margin: auto;
-        }
+<style>
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    background-color: #0f172a;
+    color: #e2e8f0;
+  }
 
-        .card {
-            background: #1e293b;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            border-radius: 10px;
-        }
+  header {
+    background: linear-gradient(135deg, #020617, #1e293b);
+    padding: 3rem 1rem;
+    text-align: center;
+  }
 
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
 
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #020617;
-        }
-    </style>
+  header p {
+    color: #94a3b8;
+    margin-top: 0.5rem;
+  }
+
+  h2 {
+    color: #38bdf8;
+    margin-bottom: 1rem;
+  }
+
+  section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .card {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  }
+
+  .grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  a.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: #38bdf8;
+    color: #020617;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+  a.button:hover {
+    background: #0ea5e9;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #020617;
+    color: #64748b;
+    font-size: 0.9rem;
+  }
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Luis Enrique Escajeda</h1>
-    <p>Power Systems • Microgrids • Automation • Data Analytics</p>
+  <h1>Luis Enrique Escajeda</h1>
+  <p>Power Systems • Microgrids • Automation • Data Analytics</p>
 </header>
 
 <section>
-    <h2>About Me</h2>
-    <div class="card">
-        <p>
-            Testing & Automation Engineer specialized in High Voltage systems,
-            Power Distribution and Industrial Automation.
-            Focused on integrating data-driven approaches (Python, Pandas)
-            into modern energy systems, microgrids, and smart infrastructure.
-        </p>
-    </div>
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      Testing & Automation Engineer specialized in high-voltage systems,
+      power distribution and industrial automation.
+    </p>
+    <p>
+      Focused on applying data-driven approaches (Python, Pandas)
+      to modern energy systems, microgrids, and smart infrastructure.
+    </p>
+    <p>
+      Strong focus on real industrial applications combining software,
+      data analytics, and electrical engineering.
+    </p>
+  </div>
 </section>
 
 <section>
-    <h2>Focus Areas</h2>
-    <div class="card">
-        <ul>
-            <li>⚡ Power Distribution Systems</li>
-            <li>🔌 Microgrid Analysis & Optimization</li>
-            <li>📊 Power Data Analytics (Pandas, Python)</li>
-            <li>🏭 Industrial Automation & MES Integration</li>
-            <li>⚙️ HV Testing & Grid Reliability</li>
-        </ul>
-    </div>
+  <h2>Focus Areas</h2>
+  <div class="card">
+    <ul>
+      <li>⚡ Power Distribution Systems</li>
+      <li>🔌 Microgrid Optimization</li>
+      <li>📊 Power Data Analytics (Python, Pandas)</li>
+      <li>🏭 Industrial Automation & MES</li>
+      <li>⚙️ High Voltage Testing & Reliability</li>
+    </ul>
+  </div>
 </section>
 
 <section>
-    <h2>Projects</h2>
+  <h2>Projects</h2>
+
+  <div class="grid grid-3">
 
     <div class="card">
-        <h3>PowerPandas Toolkit</h3>
-        <p>Data analysis tools for power systems using Pandas and Python.</p>
-        <p><a href="#">View Repository</a></p>
+      <h3>PowerPandas Toolkit</h3>
+      <p>Data analysis tools for power systems using Python and Pandas for grid performance insights.</p>
+      <a href="#" class="button">View Project</a>
     </div>
 
     <div class="card">
-        <h3>Microgrid Load Analysis</h3>
-        <p>Time-series analysis for load balancing and optimization in microgrids.</p>
-        <p><a href="#">View Repository</a></p>
+      <h3>Microgrid Load Analysis</h3>
+      <p>Time-series modeling for load balancing and optimization in distributed energy systems.</p>
+      <a href="#" class="button">View Project</a>
     </div>
 
     <div class="card">
-        <h3>HV Test Data Analytics</h3>
-        <p>Processing and visualizing high-voltage test data for diagnostics.</p>
-        <p><a href="#">View Repository</a></p>
+      <h3>HV Test Data Analytics</h3>
+      <p>Processing high-voltage test datasets for diagnostics and reliability assessment.</p>
+      <a href="#" class="button">View Project</a>
     </div>
 
+  </div>
 </section>
 
 <section>
-    <h2>Skills</h2>
-    <div class="card">
-        <ul>
-            <li>Python (Pandas, NumPy, Data Analysis)</li>
-            <li>PLC Automation & Control Systems</li>
-            <li>MES / Industry 4.0 Integration</li>
-            <li>Power Systems & HV Testing</li>
-            <li>SAP S/4HANA</li>
-        </ul>
-    </div>
+  <h2>Skills</h2>
+  <div class="card">
+    <ul>
+      <li>Python (Pandas, NumPy, Data Analysis)</li>
+      <li>PLC Automation & Control Systems</li>
+      <li>MES / Industry 4.0 Integration</li>
+      <li>Power Systems & HV Testing</li>
+      <li>SAP S/4HANA</li>
+    </ul>
+  </div>
 </section>
 
 <section>
-    <h2>Contact</h2>
-    <div class="card">
-        <p>Email: <a href="mailto:luisenriqueescajeda@gmail.com">luisenriqueescajeda@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/enrique-escajeda">Profile</a></p>
-    </div>
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: <a href="mailto:luisenriqueescajeda@gmail.com">luisenriqueescajeda@gmail.com</a></p>
+    <p><a href="https://github.com/enrique-escajeda">GitHub</a></p>
+    <p><a href="https://www.linkedin.com/in/enrique-escajeda">LinkedIn</a></p>
+  </div>
 </section>
 
 <footer>
-    <p>© 2026 Luis Escajeda | Power Systems Engineering</p>
+  <p>© 2026 Luis Escajeda | Power Systems Engineering</p>
 </footer>
 
 </body>
